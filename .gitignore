@@ -1,0 +1,23 @@
+# Simple Build Tool
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+.bloop/
+.metals/
+**/project/metals.sbt
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+.vscode/
+.bsp
+
+# intellij
+.idea
+
+#macOS temp files
+.DS_Store

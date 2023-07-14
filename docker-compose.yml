@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  message-db:
+    build: "docker-compose/message-db"
+    hostname: message-db
+    container_name: message-db
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '0.0.0.0:5432:5432'
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '0.0.0.0:5433:5432'
